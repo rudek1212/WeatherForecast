@@ -117,17 +117,17 @@ The core service of the app that manages weather data retrieval and caching for 
    git clone <repository-url>
    cd ForecastApp
 
-2. Restore Dependencies:
+2. Build container:
    ```bash
-   dotnet restore
+   docker-compose build
 
-3. Run Migrations (for EF Core):
+3. Run container:
    ```bash
-   dotnet ef database update
+   docker-compose up
 
-4. Run the Application:
+4. Go to:
    ```bash
-   dotnet run
+   https://localhost:8081/swagger/index.html
 
 ## Technologies used
 
