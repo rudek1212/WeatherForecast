@@ -119,7 +119,7 @@ public class WeatherService : IWeatherService
         return location?.MapToDto();
     }
 
-    public async Task<bool> DeleteLocationAsync(int id, CancellationToken cancellationToken)
+    public async Task<bool> DeleteLocationAsync(int id, CancellationToken cancellationToken = default)
     {
         var location =
             await _context.Locations

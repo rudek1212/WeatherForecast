@@ -1,6 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore;
-
-namespace ForecastApp.Model;
+﻿namespace ForecastApp.Model;
 
 public class Location
 {
