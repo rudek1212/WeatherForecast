@@ -1,0 +1,9 @@
+services:
+  forecastapp:
+    image: ${DOCKER_REGISTRY-}forecastapp
+    build:
+      context: ForecastApp
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+      - "8081:8081"
